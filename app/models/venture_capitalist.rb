@@ -27,7 +27,7 @@ def biggest_investment
   big_round = 0
   funding_rounds.each do |round|
     if round.investment > total
-      big_round = round.investment
+      big_round = round
       total = round.investment
     end
   end
